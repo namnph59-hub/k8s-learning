@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: namnguyenphuong/hello-app
-  tag: alpine
+  tag: 74cca6bcb7584a45898b8f6f79c0a0455dd57087
 
 resources:
   requests:
