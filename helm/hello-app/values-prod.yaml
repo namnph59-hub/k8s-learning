@@ -1,0 +1,8 @@
+replicaCount: 3
+config:
+  APP_ENV: "prod"
+  APP_NAME: "hello-app"
+secret:
+  DB_PASSWORD: "prod-password"
+ingress:
+  host: hello-prod.localhost

@@ -1,0 +1,8 @@
+replicaCount: 2
+config:
+  APP_ENV: "staging"
+  APP_NAME: "hello-app"
+secret:
+  DB_PASSWORD: "staging-password"
+ingress:
+  host: hello-staging.localhost
