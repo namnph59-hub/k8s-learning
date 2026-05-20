@@ -1,0 +1,23 @@
+replicaCount: 2
+
+image:
+  repository: nginx
+  tag: alpine
+
+resources:
+  requests:
+    cpu: 50m
+    memory: 64Mi
+  limits:
+    cpu: 100m
+    memory: 128Mi
+
+config:
+  APP_ENV: "local"
+  APP_NAME: "hello-app"
+
+secret:
+  DB_PASSWORD: "supersecret123"
+
+ingress:
+  host: hello.localhost

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+data:
+  APP_ENV: {{ .Values.config.APP_ENV }}
+  APP_NAME: {{ .Values.config.APP_NAME }}
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{ .Release.Name }}-secret
+type: Opaque
+stringData:
+  DB_PASSWORD: {{ .Values.secret.DB_PASSWORD }}
